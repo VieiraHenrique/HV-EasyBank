@@ -23,3 +23,9 @@
         margin-right: 0;
     }
 }
+
+@mixin background-reset {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}

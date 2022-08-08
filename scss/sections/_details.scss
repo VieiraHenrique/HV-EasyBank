@@ -1,0 +1,24 @@
+.details {
+    @include container;
+    background-color: $grey-light;
+    padding: 120px 0;
+
+    &__intro {
+        @include laptop13 {
+            max-width: 60%;
+        }
+    }
+
+    &__cards {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr;
+        .card {
+            @include gap-horizontal(15px);
+        }
+
+        @include laptop13 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

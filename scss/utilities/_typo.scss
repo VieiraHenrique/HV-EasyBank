@@ -1,26 +1,28 @@
-h1 {
-    @include typo-title(60px);
+.title {
+    &--main {
+        @include typo-title(55px);
+    }
+    &--sub {
+        @include typo-title(40px);
+    }
+
+    &--small {
+        @include typo-title(24px);
+    }
 }
 
-h2 {
-    @include typo-title(50px);
-}
-
-h3 {
-    @include typo-title(40px);
+.lead {
+    @include typo(18px);
 }
 
 p,
 li,
 a {
     @include typo(16px);
+    color: $grey;
+    line-height: 1.7;
 }
 
 p {
     margin-bottom: 20px;
-}
-
-.lead {
-    @include typo(18px);
-    line-height: 1;
 }

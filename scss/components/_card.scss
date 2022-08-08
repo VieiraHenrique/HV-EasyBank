@@ -1,0 +1,22 @@
+.card {
+    max-width: 100%;
+    text-align: center;
+
+    @include laptop13 {
+        text-align: left;
+    }
+
+    &__picto {
+        max-width: 72px;
+        margin: 0 auto 30px;
+        @include laptop13 {
+            margin: 0 0 30px;
+        }
+    }
+
+    &__content {
+        @include laptop13 {
+            max-width: 95%;
+        }
+    }
+}

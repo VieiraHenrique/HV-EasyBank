@@ -12,6 +12,12 @@
         justify-content: space-between;
     }
 
+    &__logo {
+        width: 140px;
+        display: grid;
+        place-items: center;
+    }
+
     &__nav {
         position: fixed;
         width: 100vw;
@@ -58,5 +64,49 @@
 
     &__cta {
         display: none;
+    }
+
+    @include laptop13 {
+        &__nav,
+        &__nav-list,
+        &__nav-item {
+            all: unset;
+        }
+
+        &__nav-list {
+            display: flex;
+        }
+
+        &__nav-item {
+            @include gap-horizontal(30px);
+            position: relative;
+            a {
+                color: $grey;
+                @include typo(14px);
+            }
+            &::after {
+                @include pseudo;
+                width: 100%;
+                height: 3px;
+                background-color: $green;
+                bottom: -30px;
+                @include transition;
+                opacity: 0;
+            }
+
+            &:hover {
+                &::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        &__hamburger {
+            display: none;
+        }
+
+        &__cta {
+            display: block;
+        }
     }
 }

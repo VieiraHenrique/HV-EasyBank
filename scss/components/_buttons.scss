@@ -1,0 +1,13 @@
+.btn {
+    background: linear-gradient(to right bottom, rgba($green, 0.6), rgba($cyan, 0.6));
+    color: $white;
+    display: block;
+    padding: 15px 30px;
+    border-radius: 100px;
+    @include transition;
+
+    &:hover {
+        transform: scale(0.98);
+        box-shadow: $shadow-medium;
+    }
+}

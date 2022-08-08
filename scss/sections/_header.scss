@@ -1,0 +1,62 @@
+.header {
+    @include container;
+    background-color: $white;
+    height: 80px;
+    position: relative;
+    z-index: 999;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        position: fixed;
+        width: 100vw;
+        height: calc(100vh - 80px);
+        left: 0;
+        top: 80px;
+        display: none;
+        justify-content: center;
+        background: linear-gradient(to bottom, $blue-dark, transparent);
+    }
+
+    &__nav-list {
+        width: 80vw;
+        background-color: $white;
+        height: fit-content;
+        display: grid;
+        place-items: center;
+        padding: 30px;
+        border-radius: 10px;
+        position: relative;
+        top: 30px;
+    }
+
+    &__nav-item {
+        @include gap-vertical(30px);
+    }
+
+    &__hamburger {
+        width: 25px;
+        height: 25px;
+        background-image: url("../../images/icon-hamburger.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .opened {
+        display: flex;
+
+        & ~ .header__hamburger {
+            background-image: url("../../images/icon-close.svg");
+        }
+    }
+
+    &__cta {
+        display: none;
+    }
+}

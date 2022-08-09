@@ -1271,7 +1271,7 @@ button {
 .header__hamburger {
   width: 25px;
   height: 25px;
-  background-image: url("../../images/icon-hamburger.svg");
+  background-image: url("https://vieirahenrique.github.io/HV-EasyBank/images/icon-hamburger.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -1280,7 +1280,7 @@ button {
   display: flex;
 }
 .header .opened ~ .header__hamburger {
-  background-image: url("../../images/icon-close.svg");
+  background-image: url("https://vieirahenrique.github.io/HV-EasyBank/images/icon-close.svg");
 }
 .header__cta {
   display: none;
@@ -1366,7 +1366,7 @@ button {
   grid-column: 1/-1;
   grid-row: 1;
   position: relative;
-  background-image: url("../../images/bg-intro-mobile.svg");
+  background-image: url("https://vieirahenrique.github.io/HV-EasyBank/images/bg-intro-mobile.svg");
   background-size: cover;
   background-position: center;
   min-height: 290px;
@@ -1374,7 +1374,7 @@ button {
 @media screen and (min-width: 1280px) {
   .home__illustration {
     grid-column: 7/-1;
-    background-image: url("../../images/bg-intro-desktop.svg");
+    background-image: url("https://vieirahenrique.github.io/HV-EasyBank/images/bg-intro-desktop.svg");
     background-repeat: no-repeat;
     background-size: 1271px;
     background-position: right -510px top -260px;
@@ -1403,7 +1403,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("../../images/image-mockups.png");
+  background-image: url("https://vieirahenrique.github.io/HV-EasyBank/images/image-mockups.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

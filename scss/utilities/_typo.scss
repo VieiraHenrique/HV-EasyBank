@@ -1,13 +1,37 @@
 .title {
     &--main {
         @include typo-title(55px);
+        text-align: center;
+        @include laptop13 {
+            text-align: left;
+        }
     }
     &--sub {
         @include typo-title(40px);
+        text-align: center;
+        @include laptop13 {
+            text-align: left;
+        }
+    }
+
+    &--sup {
+        @include typo(10px);
+        color: $grey;
     }
 
     &--small {
         @include typo-title(24px);
+        text-align: center;
+        @include laptop13 {
+            text-align: left;
+        }
+    }
+
+    &--small-extra {
+        @include typo(16px);
+        @include laptop13 {
+            text-align: left;
+        }
     }
 }
 
@@ -25,4 +49,8 @@ a {
 
 p {
     margin-bottom: 20px;
+}
+
+.text-small {
+    @include typo(13px);
 }

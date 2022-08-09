@@ -1,4 +1,21 @@
 .articles {
     @include container;
     background-color: $grey-light-extra;
+    padding: 90px 0;
+
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include laptop13 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .card-article {
+            @include gap-vertical(30px);
+            @include laptop13 {
+                margin-bottom: 0;
+                @include gap-horizontal(25px);
+            }
+        }
+    }
 }
